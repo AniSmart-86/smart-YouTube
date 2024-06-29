@@ -1,0 +1,57 @@
+.wrapper{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px auto;
+    background: #fcfafa;
+    border-radius: 25px;
+    box-shadow: 2px 2px  8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #a8a7a7;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login button{
+    width: 300px;
+    padding: 18px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login .google-btn{
+    background-color: rgb(244, 93, 38);
+    
+}
+
+.login .facebook-btn{
+    background-color: rgb(85, 85, 241);
+
+}
+
+@media (max-width: 760px){
+    .wrapper{
+        width: 90%;
+        height: 50vh;
+    }
+
+    .wrapper h1{
+        font-size: 25px;
+    }
+}

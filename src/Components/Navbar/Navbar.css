@@ -1,0 +1,105 @@
+.logo{
+    width: 100px;
+}
+
+.user-logo{
+    width: 2vw;
+    height: 4.5vh;
+    border-radius: 50%;
+}
+
+.nav-left .menu-icon{
+    width: 25px;
+    margin-right: 25px;
+ 
+}
+
+nav{
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.nav-middle .search-box{
+  
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-box img{
+  width: 17px;
+}
+
+.nav-middle{
+    position: relative;
+    max-width: 100%;
+}
+
+.nav-middle .search-box input{
+  width: 400px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.nav-middle .search-box .search{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  display: inline-block;
+  background: #ccc;
+  padding: 8px 16px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 24px;
+}
+
+.nav-right img{
+    width: 28px;
+    margin-right: 25px;
+}
+.nav-right span{
+   font-size: 15px;
+    color: #646262;
+}
+
+@media (max-width: 760px){
+    .nav-left .menu-icon{
+        margin-right: 10px;
+     
+    }
+
+    .nav-right img{
+       
+         display: none;
+        
+    }
+
+    .nav-right .user-logo{
+         display: block;
+         width: 25px;
+         height: 25px;
+        margin-right: 10px;
+       margin-left: 25px;
+    }
+
+    .nav-right span{
+        font-size: 10px;
+    }
+
+
+
+    .logo{
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .nav-middle .search-box input{
+        width: 65px;
+    }
+}
