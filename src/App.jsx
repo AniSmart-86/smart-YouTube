@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from 'react-router'
 import Home from './Pages/Home/Home'
 import Video from './Pages/Videos/Video'
 import Login from './Components/GoogleAuth/Login'
-
+import ScrollToTopOnMount from './Pages/ScrollToTopOnMount'
 
 
 
@@ -23,7 +23,7 @@ useEffect(() => {
 
   return (
   <div>
-    
+    <ScrollToTopOnMount/>
     <Navbar setSidebar={setSidebar} user={user}/>
    
     <Routes>
