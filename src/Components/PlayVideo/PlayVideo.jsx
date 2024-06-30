@@ -42,6 +42,7 @@ const PlayVideo = () => {
 fetchCommentData();
 
     },[apiData]);
+    
 
   return (
     <div className='play-video'>

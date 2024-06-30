@@ -19,7 +19,7 @@ useEffect(() => {
   if (storedUser) {
     setUser(storedUser);
   }
-}, [user]);
+}, []);
 
   return (
   <div>
@@ -27,7 +27,7 @@ useEffect(() => {
     <Navbar setSidebar={setSidebar} user={user}/>
    
     <Routes>
-      <Route path='/' element={ <Home sidebar={sidebar} setUser={setUser}/> } />
+      <Route path='/' element={ user? <Home sidebar={sidebar}  setUser={setUser}/> : <Navigate to="/login"/> } />
       <Route path='/login' element={ user? <Navigate to="/"/> : <Login setUser={setUser}/> } />
       <Route path='/video/:categoryId/:videoId' element={<Video/> } />
     </Routes>
