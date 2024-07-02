@@ -18,20 +18,13 @@ const Login = ({setUser}) => {
     <div>
         
         <div className="wrapper">
-        <h1>Choose a Login Method</h1>
+        <h1>Kindly SignIn To Continue</h1>
             <div className="login">
             <GoogleOAuthProvider clientId={CLIENT_ID}>
             <GoogleLogin onSuccess={handleLoginSuccess} />
         </GoogleOAuthProvider>
 
-                {/* <button className='google-btn'onClick={google}>
-                    <img src="" alt="" />
-                    Google
-                </button>
-                <button className='facebook-btn'>
-                    <img src="" alt="" />
-                    Facebook
-                </button> */}
+    
             </div>
         </div>
     </div>

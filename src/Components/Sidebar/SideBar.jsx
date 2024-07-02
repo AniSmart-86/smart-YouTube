@@ -16,21 +16,28 @@ import { googleLogout } from '@react-oauth/google'
 
 
 
-const SideBar = ({sidebar, category, setCategory, setUser}) => {
-const navigate = useNavigate();
+const SideBar = ({sidebar, setSidebar, category, setCategory, setUser}) => {
+
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const navigate = useNavigate();
 
     const handleLogout = () => {
         googleLogout();
         localStorage.removeItem('user');
         setUser(null);
        navigate('/login');
-        console.log('User logged out');
+       // console.log('User logged out');
       };
 
+      const handleselect =() =>{
+        setSidebar(false);
+      }
+
   return (
-    <div className={`sidebar ${sidebar? "" : "small-sidebar"}`}>
+    <div className={`sidebar ${sidebar? "" : "small-sidebar"}`} onClick={handleselect}>
 <div className="shortcut-links" >
-    <div className={`side-link ${category===0? "active" : ""}`} onClick={()=>setCategory(0)}>
+    <div className={`side-link ${category===0? "active" : ""}`} onClick={()=>setCategory(0)} >
         <img src={homeIcon} alt="" /><p>Home</p>
     </div>
     <div className={`side-link ${category===20? "active" : ""}`}onClick={()=>setCategory(20)}>
